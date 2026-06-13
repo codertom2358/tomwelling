@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+  color: white;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -0.05em;
+}
+
+.tagline {
+  margin: 1rem auto 2rem;
+  max-width: 40rem;
+  font-size: 1.125rem;
+  color: #cbd5e1;
+}
+
+.address-card {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-width: 18rem;
+}
+
+.address-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+main {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.service-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.shop-grid,
+.ledger-grid,
+.audit-grid,
+.table-panels {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.shop-grid {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.product-card,
+.ledger-card,
+.table-panel,
+.audit-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.product-card h3,
+.ledger-card h3,
+.table-panel h3,
+.audit-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.product-card p {
+  margin-bottom: 1rem;
+  color: #475569;
+}
+
+.button,
+.input,
+textarea {
+  width: 100%;
+  font: inherit;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.95rem 1rem;
+  background: #1e40af;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: #0f172a;
+}
+
+.button-primary:hover {
+  background: #111827;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.table-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table-panel th,
+.table-panel td {
+  padding: 0.9rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table-panel th {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.audit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.audit-card {
+  text-align: center;
+}
+
+.audit-card p {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.audit-notes {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  margin-top: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: #475569;
+}
